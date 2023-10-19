@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * _strcat - It is a function
+ * _strncat - It is a function
  * @dest: Variable from main
  * @src: Variable from main
+ * @n: Variable from main
  * Return: Return dest
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
@@ -14,7 +15,7 @@ char *_strcat(char *dest, char *src)
 
 	}
 
-	for (j = 0; src[j] != '\0'; j++)
+	for (j = 0; src[j] != '\0' && j < n; j++)
 	{
 		dest[i + j] = src[j];
 	}
