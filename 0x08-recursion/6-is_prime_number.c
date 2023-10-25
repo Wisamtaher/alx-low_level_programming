@@ -19,6 +19,7 @@ int is_prime_number(int n)
  * actual_prime - function cacl. if number is prime
  * @n: variable
  * @i: iterator
+ * Return: 1 if n is prime
  */
 
 int actual_prime(int n, int i)
