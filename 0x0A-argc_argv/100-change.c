@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	cents = atoi(argv[1]);
+
 	while (cents > 0)
 	{
 		if (cents >= 25)
@@ -28,7 +29,7 @@ int main(int argc, char **argv)
 			cents -= 5;
 		if (cents >= 2)
 			cents -= 2;
-		if (cents <= 1)
+		if (cents >= 1)
 			cents -= 1;
 		mincoin += 1;
 	}
