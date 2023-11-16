@@ -1,9 +1,9 @@
 #include "lists.h"
 
-void ComefirstbyCTC(void)__attribute__((constructor));
+void ComeFirstbyCTC(void)__attribute__((constructor));
 
 /**
- * ComeFirst - Function
+ * ComeFirstbyCTC - function
  */
 
 void ComeFirstbyCTC(void)
